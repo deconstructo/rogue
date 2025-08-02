@@ -171,9 +171,11 @@ CH:
 		case '?':
 			id_com();
 			break;
+#ifndef NOSHELL
 		case '!':
 			do_shell();
 			break;
+#endif
 		case 'o':
 			edit_opts();
 			break;
@@ -199,7 +201,7 @@ CH:
 			throw();
 			break;
 		case 'v':
-			message("rogue-clone: Version III. (Tim Stoehr was here), tektronix!zeus!tims", 0);
+			message(VERSTR, 0);
 			break;
 		case 'Q':
 			quit(0);

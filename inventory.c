@@ -156,7 +156,9 @@ struct id_com_s com_id_tab[COMS] = {
 	{ '.',	        ".       rest for a turn" },
 	{ 'Q',	        "Q       quit" },
 	{ ',',	        ",       pick something up" },
+#ifndef NOSHELL
 	{ '!',	        "!       shell escape" },
+#endif
 	{ 'i',	        "i       inventory" },
 	{ 'F',	        "F<dir>  fight till either of you dies" },
 	{ 'I',	        "I       inventory single item" },

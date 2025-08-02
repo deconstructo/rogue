@@ -18,7 +18,7 @@ BINDIR		= ${GAMESDIR}/bin
 LIBDIR		= ${GAMESDIR}/lib
 
 
-CFLAGS		= -DUNIX  -DLINUX -DUNIX_SYSV -Wall -DCROSS -g -O6
+CFLAGS		=  -DNOSHELL -DUNIX  -DLINUX -DUNIX_SYSV -Wall -DCROSS -g -O6
 LDFLAGS         = -g
 LIBS            = -lncurses
 

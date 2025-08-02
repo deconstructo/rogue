@@ -6,6 +6,8 @@
  *    3.)  This code is not to be traded, sold, or used for personal
  *         gain or profit.
  */
+
+#define VERSTR "rogue-clone: Version III.I. (DeeDeeCee was here)  (Tim Stoehr was here), tektronix!zeus!tims"
 #define boolean int
 
 #define NOTHING		((unsigned short)     0)

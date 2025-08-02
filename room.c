@@ -601,6 +601,7 @@ CH:
 	}
 }
 
+#ifndef NOSHELL
 void
 do_shell()
 {
@@ -622,3 +623,4 @@ do_shell()
 	md_heed_signals();
 #endif
 }
+#endif

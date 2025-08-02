@@ -509,6 +509,7 @@ md_lock(l)
 	}
 }
 
+#ifndef NOSHELL
 /* md_shell():
  *
  * This function spawns a shell for the user to use.  When this shell is
@@ -532,6 +533,8 @@ md_shell(shell)
 	}
 	wait(&w);
 }
+
+#endif
 
 /* If you have a viable curses/termlib library, then use it and don't bother
  * implementing the routines below.  And don't compile with -DCURSES.
