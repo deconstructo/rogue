@@ -12,7 +12,6 @@ object level_monsters;
 char mon_disappeared;
 
 char *m_names[] = {
-	"knob goblin"
 	"aquator",
 	"bat",
 	"centaur",
@@ -42,7 +41,6 @@ char *m_names[] = {
 };
 
 object mon_tab[MONSTERS] = {
-	{(ASLEEP|WANDERS|STEALS_ITEM),"2d6",25,'k',4,2,15,75,0,0,0,0,0}, 
 	{(ASLEEP|WAKENS|WANDERS|RUSTS),"0d0",25,'A',20,9,18,100,0,0,0,0,0},
 	{(ASLEEP|WANDERS|FLITS|FLIES),"1d3",10,'B',2,1,8,60,0,0,0,0,0},
 	{(ASLEEP|WANDERS),"3d3/2d5",32,'C',15,7,16,85,0,10,0,0,0},
